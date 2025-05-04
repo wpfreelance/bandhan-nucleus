@@ -1,0 +1,36 @@
+{
+  "name": "bandhan-student-verification",
+  "version": "1.0.0",
+  "description": "Student verification portal for educational institutions",
+  "main": "next.config.js",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 5000",
+    "lint": "next lint",
+    "db:push": "node scripts/db-push.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "@sendgrid/mail": "^8.1.0",
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "drizzle-kit": "^0.20.7",
+    "drizzle-orm": "^0.29.3",
+    "firebase": "^10.7.1",
+    "next": "^14.0.4",
+    "pg": "^8.11.3",
+    "postcss": "^8.4.32",
+    "razorpay": "^2.9.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.6",
+    "ws": "^8.15.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4"
+  }
+}

@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #c41b48;
+  --primary-light: #eb2026;
+  --primary-dark: #a01538;
+  --gray-dark: #3a3a3a;
+  --gray-medium: #6C6C6C;
+  --gray-light: #e7e7e7;
+}
+
+/* Custom Bandhan styles */
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: var(--primary-dark);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.text-gray-dark {
+  color: var(--gray-dark);
+}
+
+.focus\:ring-primary:focus {
+  --tw-ring-color: var(--primary);
+}
+
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #1e40af;
+  --accent-color: #dbeafe;
+  --text-color: #1f2937;
+  --background-color: #ffffff;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300 inline-flex items-center;
+  }
+  
+  .btn-secondary {
+    @apply bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-2 px-6 rounded-lg transition duration-300 inline-flex items-center;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+  
+  .error-text {
+    @apply text-red-500 text-sm mt-1;
+  }
+  
+  .success-text {
+    @apply text-green-500 text-sm mt-1;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+  
+  .section-heading {
+    @apply text-2xl font-bold mb-6;
+  }
+}
