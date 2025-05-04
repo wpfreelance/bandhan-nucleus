@@ -1,7 +1,7 @@
 {
   "name": "bandhan-student-verification",
   "version": "1.0.0",
-  "description": "Student verification portal for educational institutions",
+  "description": "Student verification portal for educational institutions (WPFreelance + Nucleus",
   "main": "next.config.js",
   "scripts": {
     "dev": "next dev -p 3000",
